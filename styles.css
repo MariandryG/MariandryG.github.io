@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+   :root {
+        --variable-name: value;
+    }
+    selector {
+        propiedad: var(--nombre-variable);
+    }
+    
+/* Variables */
+:root {
+    --font-family: "Roboto", sans-serf;
+    --normal-font: 400;
+    --bold-font: 700;
+    --bolder-font: 900;
+    --bg-color: #fcfcfc;
+    --primary-color: #4756df;
+    --secondary-color: #ff7235;
+    --primary-shadow: #8b8eaf;
+    --secondary-shadow: #a17a69;
+    --bottom-margin: 0.5rem;
+    --bottom-margin-2: 1rem;
+    --line-height: 1.7rem;
+    --transition: 0.3s;
+  }
+  /* Variables fin */
+
+html {
+scroll-behavior: smooth;
+}
+
+/* CSS Resets */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+/* border: 2px solid red; */
+}
+
+ul {
+list-style-type: none;
+}
+
+a {
+text-decoration: none;
+color: var(--primary-color);
+}
+
+a:hover {
+text-decoration: none;
+color: var(--secondary-color);
+}
+
+body {
+font-family: var(--font-family);
+}
+
+    nav {
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5rem 3.5rem;
+        background-color: var(--bg-color);
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    }
+
+        nav h1 {
+            color: var(--color-primario);
+        }
+        
+        nav a {
+            color: var(--color-primario);
+            transition: var(--transicion);
+        }
+        nav a:hover {
+            color: var(--valor-secundario);
+            border-bottom: 2px solid var(--valor-secundario);
+        }
+        
+        nav ul {
+            display: flex;
+            gap: 1.9rem;
+        }
+        
+        nav ul li {
+            font-weight: var(--negrita);
+        }
+
+        .menu-hamburguesa {
+            color: var(--primary-color);
+            font-size: 2rem;
+            border: 0;
+            background-color: transparent;
+            cursor: pointer;
+            display: none;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2.5rem;
+            max-width: 68.75rem;
+            margin: auto;
+        }
+
+            .hero img {
+                height: 37.5rem;
+                width: 37.5rem;
+            }
+            
+            .bio {
+                width: 25rem;
+                padding: 0.625rem;
+                border-radius: 6px;
+                box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+            }
+            
+            .bio h1 {
+                margin-bottom: var(--bottom-margin);
+            }
+            
+            .bio p {
+                line-height: var(--line-height);
+                padding: 0.3rem 0;
+            }
+
+                .mas-sobre {
+                    background-color: var(--bg-color);
+                    padding: 1rem 6rem;
+                }
+                
+                .mas-sobre h2 {
+                    margin-bottom: var(--bottom-margin);
+                    text-align: center;
+                }
+                
+                .mas-sobre p {
+                    line-height: var(--line-height);
+                    padding: 0.4rem;
+                }
+
+                .habilidades {
+                    max-width: 100.75rem;
+                    margin: auto;
+                    text-align: center;
+                        margin-top: 2.5rem;
+                    }
+                    
+                    .encabezado-habilidad {
+                        margin-bottom: 1rem;
+                    }
+                    
+                    .contenedor-habilidad img {
+                        padding: 1.25rem;
+                    }
+                    
+                    .icono {
+                        width: 8.875rem;
+                        height: 8.25rem;
+                    }
+
+                        .tarjeta-icono {
+                            background-color: #fff;
+                            border-radius: 11px;
+                            box-shadow: 0 3px 10px var(--secondary-shadow);
+                            padding: 20px;
+                            margin: 10px;
+                        }
+
+                            .tarjeta-icono {
+                                background-color: #fff;
+                                border-radius: 11px;
+                                box-shadow: 0 3px 10px var(--secondary-shadow);
+                                padding: 20px;
+                                margin: 10px;
+                            }
+
+                            .proyectos {
+                                background-color: var(--bg-color);
+                                padding: 32px 0;
+                                margin-top: 2rem;
+                            }
+                            
+                            .foto-de-proyecto {
+                                width: 65%;
+                                height: 60%;
+                            }
+                            
+                            .contenedor-de-proyectos {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+
+                                .titulo-de-proyectos {
+                                    text-align: center;
+                                    margin-bottom: 1rem;
+                                }
+                                
+                                .contenedor-de-proyectos {
+                                    text-align: center;
+                                    width: 21.875rem;
+                                    padding: 1rem;
+                                }
+
+        .contenedor-de-proyecto p {
+    padding: 0.4rem;
+    }
+                                            
+    .titulo-de-proyecto {
+    margin-bottom: var(--bottom-margin);
+    }
+    .detalles-de-proyecto {
+    margin-bottom: var(--bottom-margin);
+    }
+        .tarjeta-de-proyecto {
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--primary-shadow);
+        padding: 20px;
+        margin: 10px;
+        }
+        .contacto {
+            margin-top: 2rem;
+          }
+          
+          .contacto h2 {
+            text-align: center;
+            margin-bottom: var(--bottom-margin-2);
+          }
+          
+          .contenedor-formulario-contacto {
+            max-width: 40.75rem;
+            margin: 0 auto;
+            padding: 0.938rem;
+            border-radius: 5px;
+            box-shadow: 0 3px 10px var(--secondary-shadow);
+          }        
+          .contenedor-formulario-contacto label {
+            line-height: 2.7em;
+            font-weight: var(--bold-font);
+            color: var(--primary-color);
+          }
+          
+          .contenedor-formulario-contacto textarea {
+            min-height: 6.25rem;
+            font-size: 14px;
+          }
+          
+          .contenedor-formulario-contacto .input-field {
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 5px;
+            border: none;
+            border: 2px outset var(--primary-color);
+            font-size: 0.875rem;
+            outline: none;
+          }                            
+
+          .input-field::placeholder {
+            padding: 0.5rem;
+            color: var(--primary-color);
+          }
+
+          .submit-btn {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #fff;
+            border: 2px solid var(--primary-color);
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: var(--bold-font);
+            transition: var(--transition);
+          }
+          .submit-btn:hover {
+            background-color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+            cursor: pointer;
+          }
+          .sociales {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            right: 1%;
+            bottom: 50%;
+          }
+          
+          .socicon {
+            width: 2rem;
+            height: 2rem;
+          }
+
+
+          footer {
+            background-color: var(--bg-color);
+            padding: 1.25rem;
+            text-align: center;
+            margin: 2rem 0 0;
+          }
+
+          .desplazarse-hacia-arriba {
+            position: fixed;
+            right: 0.5%;
+            bottom: 3%;
+            cursor: pointer;
+          }
+          
+          .flecha-arriba {
+            width: 3rem;
+            height: 3rem;
+          }
