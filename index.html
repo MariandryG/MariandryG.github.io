@@ -14,21 +14,34 @@
         rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         />
-    <title>Mariandry Garcia | Desarolladora Wed</title>
+    <title>Mariandry Garcia | Desarrolladora Web</title>
 </head>
     <body>
-        <nav>
-            <h1>Mariandry Garcia Desarolladora Junior :D</h1>
-            <button class="menu-hamburguesa" id="menu-hamburguesa">
+        <nav class="navbar">
+          <div class="logo">
+            <h1>
+              <span data-lang="es">Mariandry Garcia — Desarrolladora Web Junior 🤓</span> 
+              <span data-lang="en" style="display: none;">Mariandry Garcia — Junior Frontend Web Developer 🤓</span></h1>
+          </div>
+            <button class="menu-hamburguesa" id="menu-hamburguesa" aria-label="Menú">
               <ion-icon class="barras" name="menu-outline"></ion-icon>
-              </button>
-                <ul class="navegacion" id="navegacion">
-                <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
-                <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
-                <li><a href="#contacto" class="nav-link">Contacto</a></li>
-                </ul>
-            </nav>
-            <br>
+            </button>
+            <button type="submit" id="cambiar-idioma" class="btn-idioma">EN</button>
+              <ul class="navegacion" id="navegacion">
+                <li><a href="#habilidades" class="nav-link">
+                  <span data-lang="es">Habilidades 🛠️💻</span>
+                  <span data-lang="en" style="display: none;">Skills 🛠️💻</span>
+                </a></li>
+                <li><a href="#proyectos" class="nav-link">
+                  <span data-lang="es">Proyectos 📁🚀</span>
+                  <span data-lang="en" style="display: none;">Projects 📁🚀</span>
+                </a></li>
+                <li>  <a href="#contacto" class="nav-link">
+                  <span data-lang="es">Contacto ✉️📞</span>
+                  <span data-lang="en" style="display: none;">Contact ✉️📞</span>
+                </a></li>
+              </ul>
+        </nav>
         <section class="hero" id="about">
             <img
             src="/imagenes/mariandry.png"
@@ -36,103 +49,157 @@
             loading="lazy"
             class="hero-img"/>
             <div class="bio animate__animated animate__shakeX">
-            <h2 class="bio-titulo">Sobre Mí</h2>
-            <p class="bio-texto">
-              ¡Hola! Me llamo Mariandry tengo 24 años Soy desarrolladora wed frontend nivel junior, tengo habilidades para la creacion de interfaces atractivas,creativas y funcionales, mi enfoque esta dirigido en la usabilidad y que el usuario tenga una buena experiencia con el uso de la interfaz.
+            <h2 class="bio-titulo" data-lang="es">Sobre Mí</h2>
+            <h2 class="bio-titulo" data-lang="en" style="display: none;">About Me</h2>
+            <p class="bio-texto" data-lang="es">
+              ¡Hola! Me llamo Mariandry, tengo 24 años y soy desarrolladora web frontend junior. Me especializo en la creación de interfaces atractivas, creativas y funcionales. Mi enfoque está centrado en la usabilidad y en asegurar que los usuarios disfruten de una experiencia intuitiva y agradable al interactuar con las interfaces.
+            </p>
+            <p class="bio-texto" data-lang="en" style="display: none;">
+              Hi! My name is Mariandry, I’m 24 years old. I’m a junior frontend web developer with skills in creating attractive, creative, and functional interfaces. My focus is on usability and delivering a great user experience.
             </p>
             </div>
     </section>
         <section class="mas-sobre">
-            <h2>Más sobre mí</h2>
-            <p>
-            Poseo hablidades en la creación de la apariencia visual y la interacción con la wed, con un buen manejo de HTML para crear estructuras y contenidos junto con este una gran habilidad para manejar las hojas de estilo en cascada CSS para estilizar de forma correcta y atrayante la estrutura de HTML.
-            </p>
-            <p>
-            Otras de mis habilidades esta en el uso del lenguaje de programacion JavaScrip, para poder crear una pagina interactiva donde todos los elementos puedan interartuar de forma correcta y funcional.
-            </p>
-            <p>
-            Al ser nivel Junior me enfoco en adquirir conocimiento mediante retos que desafien mis habilidades para aprender cada vez mas y que esto me permitar aplicar las mejores practicas en el desarrollo wed y asi crecer de forma profecional en el mundo del desarrollo frontend.
-            </p>
-
+          <h2 data-lang="es">Más sobre mí</h2>
+          <h2 data-lang="en" style="display: none;">More About Me</h2>
+          <p data-lang="es">
+            Me apasiona dar vida a las ideas a través del diseño y la interacción web. Manejo con soltura HTML para estructurar contenido y CSS para darle estilo con personalidad, siempre buscando una apariencia clara y atractiva.
+          </p>
+          <p data-lang="en" style="display: none;">
+            I'm passionate about bringing ideas to life through web design and interaction. I'm confident using HTML to structure content and CSS to style it with personality, always aiming for a clear and attractive look.
+          </p>
+          <p data-lang="es">
+            También domino JavaScript, con el cual creo experiencias interactivas donde cada elemento cobra vida y responde al usuario de forma funcional e intuitiva.
+          </p>
+          <p data-lang="en" style="display: none;">
+            I’m also skilled in JavaScript, which I use to create interactive experiences where every element comes to life and responds to the user in a functional and intuitive way.
+          </p>
+          <p data-lang="es">
+            Como desarrolladora junior, siempre busco nuevos desafíos que me reten a crecer. Me esfuerzo por aprender constantemente y aplicar buenas prácticas que me impulsen a mejorar como profesional en el desarrollo frontend.
+          </p>
+          <p data-lang="en" style="display: none;">
+            As a junior developer, I'm always looking for new challenges that push me to grow. I strive to keep learning and apply best practices that help me become a better frontend professional.
+          </p>
+        </section>
+        <h2 class="titulo-de-proyectos" data-lang="es">Algunos de mis proyectos recientes</h2>
+        <h2 class="titulo-de-proyectos" data-lang="en" style="display: none;">Some of my recent projects</h2>
             <section class="proyectos" id="proyectos">
               <div class="contenedor-de-proyectos">
-              <div class="contenedor-de-proyecto tarjeta-de-proyecto">
-                <h2 class="titulo-de-proyectos">Algunos de mis proyectos recientes</h2>
+                <div class="contenedor-de-proyecto tarjeta-de-proyecto">
                   <img class="proyecto"
                   src="/imagenes/calculadora.png.jpg"
                   alt="greeny-earth"
                   loading="lazy"
                   class="project-pic"
                   />
-                  <h3 class="titulo-de-proyecto">Calculadora de Divisas MG</h3>
-                  <p class="detalles-de-proyecto">
-                  La calculadora de Divisas es un proyector personal de una App desarrollada en HTML5, CSS y JS con el fin de permitir calcular las diferencias entre tasas del dolar respecto al bolivar.
+                  <h3 class="titulo-de-proyecto" data-lang="es">Calculadora de Divisas MG</h3>
+                  <h3 class="titulo-de-proyecto" data-lang="en" style="display: none;">Currency Converter MG</h3>
+                  <p class="detalles-de-proyecto" data-lang="es">
+                    Este es un proyecto personal desarrollado con HTML5, CSS y JavaScript. Se trata de una calculadora de divisas que permite conocer el valor del dólar respecto al bolívar, facilitando conversiones rápidas y precisas.
                   </p>
-                  <a href="https://mariandryg.github.io/calculadora-divisas/" target="_blank" class="enlace-de-proyecto">Echale un vistazo!</a>
+                  <p class="detalles-de-proyecto" data-lang="en" style="display: none;">
+                    This is a personal project built with HTML5, CSS, and JavaScript. It's a currency converter that helps users calculate the value of the US dollar relative to the Venezuelan bolívar, making quick and accurate conversions.
+                  </p>
+                  <a href="https://mariandryg.github.io/calculadora-divisas/" target="_blank" class="enlace-de-proyecto" data-lang="es">Echale un vistazo!</a>
+                  <a href="https://mariandryg.github.io/calculadora-divisas/" target="_blank" class="enlace-de-proyecto" data-lang="en" style="display: none;">Check it out!</a>
+                  <p data-lang="es">
+                    También puedes visitar el <a href="https://github.com/MariandryG/calculadora-divisas" target="_blank">repositorio en GitHub</a> para ver cómo está construida por dentro.
+                  </p>
+                  <p data-lang="en" style="display: none;">
+                    You can also visit the <a href="https://github.com/MariandryG/calculadora-divisas" target="_blank">GitHub repository</a> to see how it was built.
+                  </p>
               </div>
-              </div>
-          </section>
+            </div>
         </section>
-            <section class="habilidades" id="habilidades">
-                <h2 class="header-habilidadr">Mis mejores habilidades</h2>
-        
-                <div class="contenedor-habilidades">
+        <section class="habilidades" id="habilidades">
+            <h2 class="header-habilidad" data-lang="es">Mis mejores habilidades</h2>
+            <h2 class="encabezado-habilidad" data-lang="en" style="display: none;">My Top Skills</h2>
+              <div class="contenedor-habilidades">
                 <div class="first-set animate__animated animate__pulse">
-                    <img class="img"
-                    src="/imagenes/css.png"
-                    alt=""
-                    loading="lazy"
-                    class="icon icon-card"
-                    />
-                    <img class="img"
-                    src="/imagenes/html.png"
-                    alt=""
-                    loading="lazy"
-                    class="icon icon-card"
-                    />
-                    <img class="img"
-                    src="/imagenes/java.png"
-                    alt=""
-                    loading="lazy"
-                    class="icon icon-card"
-                    />
+                  <div class="icon-card">
+                      <img
+                        class="img"
+                        src="/imagenes/html.png"
+                        alt="HTML5"
+                        loading="lazy"/>
+                        <p data-lang="es">HTML5: estructura semántica clara y optimizada</p>
+                        <p data-lang="en" style="display: none;">HTML5: clear and optimized semantic structure</p>
+                  </div>
+                  <div class="icon-card">
+                      <img
+                        class="img"
+                        src="/imagenes/css.png"
+                        alt="CSS3"
+                        loading="lazy"/>
+                        <p data-lang="es">CSS3: estilos modernos, animaciones y responsive design</p>
+                        <p data-lang="en" style="display: none;">CSS3: modern styles, animations, and responsive design</p>
+                  </div>
+                  <div class="icon-card">
+                      <img
+                        class="img"
+                        src="/imagenes/java.png"
+                        alt="JavaScript"
+                        loading="lazy"/>
+                        <p data-lang="es">JavaScript: lógica interactiva, DOM y funcionalidades dinámicas</p>
+                        <p data-lang="en" style="display: none;">JavaScript: interactive logic, DOM manipulation, and dynamic functionality</p>
+                    </div>
                 </div>
-                </div>
+              </div>
             </section>
                 <section class="contacto" id="contacto">
-                    <h2>Contactame</h2>
-                    <p>Correo electronico: mariandrygarcia78@gmail.com</p><br>
-                    <p>Telefono: +58 412-1000-530</p><br>
-                    <a href="https://github.com/MariandryG" target="_blank">Perfil de Github</a><br>
-                    <a href="https://www.instagram.com/mariandrygarcia/" target="_blank" >Perfil de Instagram</a><br>
-                    <a href="https://www.linkedin.com/in/mariandry-garcia-76b708344/" target="_blank">Perfil de linkedin</a>
+                    <h2 class="title" data-lang="es">Contactame</h2>
+                    <h2 class="title" data-lang="en" style="display: none;">Contact Me</h2>
+                    <div class="contacto-linea" data-lang="es">
+                      <p><strong>Correo: ✉️</strong></p>
+                      <a href="mailto:mariandrygarcia78@gmail.com" target="_blank">mariandrygarcia78@gmail.com</a>
+                    </div>
+                    
+                    <div class="contacto-linea" data-lang="en" style="display: none;">
+                      <p><strong>Email: ✉️</strong></p>
+                      <a href="mailto:mariandrygarcia78@gmail.com" target="_blank">mariandrygarcia78@gmail.com</a>
+                    </div>
+                    
+                    <div class="contacto-linea" data-lang="es">
+                      <p><strong>Teléfono: 📞</strong></p>
+                      <a href="https://wa.me/584121000530" target="_blank">+58 412 1000 530</a>
+                    </div>
+                    
+                    <div class="contacto-linea" data-lang="en" style="display: none;">
+                      <p><strong>Phone: 📞</strong></p>
+                      <a href="https://wa.me/584121000530" target="_blank">+58 412 1000 530</a>
+                    </div>
+                    <div class="redes-contacto">
+                        <a href="https://github.com/MariandryG" target="_blank" class="icono-contacto github">
+                            <img src="./imagenes/git.png" alt="GitHub"> Github</a><br>
+                        <a href="https://www.instagram.com/mariandrygarcia/" target="_blank" class="icono-contacto github"> 
+                            <img src="./imagenes/instagram.png" alt="Instagram">Instagram</a><br>
+                        <a href="https://www.linkedin.com/in/mariandry-garcia-76b708344/" target="_blank" class="icono-contacto github"> 
+                            <img src="./imagenes/linkedin.png" alt="Linkedin">Linkedin</a><br>
+                    </div>
                   </section>
-
-                  <div class="sociales">
-                    <a href="https://www.instagram.com/mariandrygarcia/" target="_blank"
-                      ><img
-                        src="/imagenes/instagram.png"
-                        alt="Instagram"
-                        loading="lazy"
-                        class="socicon"
-                    /></a>
-                    <a href="https://www.linkedin.com/in/mariandry-garcia-76b708344/" target="_blank"
-                      ><img 
-                        src="/imagenes/linkedin.png"
-                        alt="Linkedin"
-                        loading="lazy"
-                        class="socicon"
-                    /></a>
-                    <a href="https://github.com/MariandryG" target="_blank"
-                      ><img src="/imagenes/git.png" alt="Github" class="socicon"
-                    /></a>
-
-                  <i class="desplazarse-hacia-arriba" id="desplazarse-hacia-arriba"
-                  ><img
-                    src="/imagenes/flecha.png"
-                    class="socicon up-arrow"
-                    alt="desplazarse-hacia-arriba"
-                /></i>
+        <div class="sociales">
+            <a href="https://www.instagram.com/mariandrygarcia/" target="_blank" aria-label="Instagram">
+              <img
+              src="/imagenes/instagram.png"
+              alt="Instagram"
+              loading="lazy"
+              class="socicon"/></a>
+            <a href="https://www.linkedin.com/in/mariandry-garcia-76b708344/" target="_blank" aria-label="Linkedin">
+              <img 
+              src="/imagenes/linkedin.png"
+              alt="Linkedin"
+              loading="lazy"
+              class="socicon"/></a>
+            <a href="https://github.com/MariandryG" target="_blank" aria-label="Github">
+              <img src="/imagenes/git.png" alt="Github" class="socicon"/>
+              </a>
+            <a href="#top" class="desplazarse-hacia-arriba" id="desplazarse-hacia-arriba" aria-label="Ir arriba">
+              <img
+              src="/imagenes/flecha.png"
+              class="socicon up-arrow"
+              alt="desplazarse-hacia-arriba"/>
+            </a>
+        </div>
     <script src="codigo.js"></script>
     <script
     type="module"

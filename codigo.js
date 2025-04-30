@@ -1,19 +1,26 @@
-// funcionalidad de desplazar hacia arriba
-const desplazarArriba = document.querySelector("#desplazarse-hacia-arriba");
 
-desplazarArriba.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    left: 0,
-    behavior: "smooth",
-  });
-});
 // Selecciones para Barra de navegación hamburguesa
 const menuHamburguesa = document.getElementById('menu-hamburguesa');
 const navegacion =  document.getElementById ('navegacion');
 
 menuHamburguesa.addEventListener ('click', () => {
 
-  navegacion.classList.toggle('activar'); // Alterna la clase activar
+  navegacion.classList.toggle('mostrar'); // Alterna la clase activar
 });
 
+const botonIdioma = document.getElementById("cambiar-idioma");
+
+botonIdioma.addEventListener("click", () => {
+  const idiomaActual = botonIdioma.textContent.trim(); // "EN" o "ES"
+  const nuevoIdioma = idiomaActual === "EN" ? "en" : "es";
+  const siguienteEtiqueta = idiomaActual === "EN" ? "ES" : "EN";
+
+  // Cambiar texto del botón
+  botonIdioma.textContent = siguienteEtiqueta;
+
+  // Mostrar los textos en el nuevo idioma y ocultar los otros
+  document.querySelectorAll("[data-lang]").forEach(el => {
+    const lang = el.getAttribute("data-lang");
+    el.style.display = lang === nuevoIdioma ? "block" : "none";
+  });
+});
