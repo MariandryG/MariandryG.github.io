@@ -1,13 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
-@media screen and (max-width: 720px) {
-    /* los cambios se reflejan en una pantalla con un ancho de 720px ye inferior */
-}
-
 
 
 /* Variables */
 :root {
-    --font-family: "Roboto", sans-serf;
+    --font-family: "Roboto", sans-serif;
     --normal-font: 400;
     --bold-font: 700;
     --bolder-font: 900;
@@ -27,7 +23,7 @@ scroll-behavior: smooth;
 margin: 0;
 padding: 0;
 box-sizing: border-box;
-/* border: 2px solid red; */
+
 }
 
 ul {
@@ -37,7 +33,7 @@ list-style-type: none;
 a {
 text-decoration: none;
 color: #ff0000;
-text-align: center;
+
 }
 
 
@@ -88,16 +84,16 @@ font-family: var(--font-family);
             }
             
     
-.navegacion li {
+.navegacion a {
+    color: #000;
     text-decoration: none;
-    color: #333;
     font-weight: 500;
-    transition: color 0.3s ease;           
+    transition: color 0.3s ease;          
         }
 
-.navegacion li a:hover {
+.navegacion a:hover {
     color: #007bff;
-        }
+}
                     
 .navegacion a {
     color: #000000;
@@ -146,58 +142,84 @@ font-family: var(--font-family);
     transform: scale(1.05);
                 }
     
-.hero {  
+.hero  {  
     padding: 10px;
     display: flex;
     max-width: 71.75rem;
     margin: auto;
-    background: #000000;   
-        }
+    background: #000000;
+    flex-wrap: wrap; /* Por si en móvil quieres que se acomoden en columna */
+    justify-content: center;
+    align-items: center;
+}
 
-.bio {float: left;
+.bio  {
     width: 60%;
-    height: 60%;
-    border-radius: 6px;
-    box-shadow: 0px 2px 15px 2px;
-    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    text-align: left;
     margin: 20px;
     padding: 20px;
     background: #000000;
     color: #ffffff;
-            }
+}
             
-.hero img {float: left;
-    height: 40%;
-    width: 40%;
-    border-radius: 30%;
+.hero img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
     padding: 20px;
-    width: 10rem;
-    height: 10rem;
+    object-fit: cover;
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding: 1rem;
+            }
+
+            .bio {
+                width: 100%;
+                margin: 1rem 0;
+            }
+
+            .hero img {
+                width: 8rem;
+                height: 8rem;
+                padding: 0;
+                margin-bottom: 1rem;
+            }
         }
             
 
 .mas-sobre {
 background-color: #000000;
-padding: 20px;
+padding: 2rem 1rem;
 margin-top: 2rem;
 color: #fcfcfc;
         }
                 
 .mas-sobre h2 {
 text-align: center;
+margin-bottom: 1rem;
         }
                 
 .mas-sobre p {
-line-height: var(--line-height);
-padding: 0.4rem;
-text-align: justify;
+    line-height: var(--line-height);
+    text-align: left;
+    margin-bottom: 1rem;
                 }
+                @media (max-width: 768px) {
+                    .mas-sobre {
+                        padding: 1.5rem 1rem;
+                    }
 
-.titulo-de-proyectos{
-    margin: 40px;
-    font-size: 2rem;
-    
-}                
+                    .mas-sobre p {
+                        font-size: 0.95rem;
+                    }
+                }
+                
 .habilidades {
 max-width: 100.75rem;
 margin-top: 2.5rem;
@@ -215,6 +237,7 @@ display: flex;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 2rem; /* espacio entre tarjetas */
     }
 
 .icon-card {
@@ -242,6 +265,11 @@ display: flex;
     text-align: center;
                 }
 
+.titulo-de-proyectos{
+    margin: 40px;
+    font-size: 2rem;    
+                }  
+
 .proyectos {
     background-color: var(--bg-color);
     margin-top: 2rem;
@@ -264,12 +292,16 @@ display: flex;
     margin-bottom: 20px;
 }
         
+/* Contenedor general */
 .contenedor-de-proyectos {
-    text-align: center;
-    width: 80%;
-    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    width: 90%;
     margin: auto;
 }
+
 
 .contenedor-de-proyecto p {
     color: #ffffff;
@@ -281,13 +313,17 @@ display: flex;
 }
 
 
+/* Tarjeta individual */
 .tarjeta-de-proyecto {
     background-color: #000000;
+    color: #ffffff;
     border-radius: 11px;
-    box-shadow: 0 3px 10px ;
-    padding: 15px;
-    margin: 10px;
-    }
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    padding: 1rem;
+    width: 15rem;
+    text-align: center;
+}
+
 
 .proyecto {
     width: 75%;
@@ -378,14 +414,14 @@ display: flex;
             margin-bottom: 1rem;
             color: #fff; /* o el color que uses en el resto del sitio */
             font-size: 1rem;
-          }
-          
-          .contacto-linea a {
+            }
+
+            .contacto-linea a {
             display: block;
             color: #ff0000; /* color de enlace */
             text-decoration: none;
-          }
-          
-          .contacto-linea a:hover {
+            }
+
+            .contacto-linea a:hover {
             text-decoration: underline;
-          }
+            }
